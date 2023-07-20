@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #251d20;
+  font-size: 18px;
+}
+a {
+  color: #251d20;
+  text-decoration: underline;
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 15px;
+  padding-top: 20px;
+}
+
+.logo img {
+  width: 260px;
+  height: auto;
+}
+
+.contact {
+  position: fixed;
+  text-align: right;
+  right: 15px;
+  top: 20px;
+}
+.contact a {
+  text-decoration: none;
+}
+
+.description {
+  position: fixed;
+  bottom: 18px;
+  left: 22px;
+  width: 320px;
+  margin-top: 0;
+}
+
+.contact,
+.description p,
+br + a {
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.copyright {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.menu {
+  position: fixed;
+  bottom: 18px;
+  right: 15px;
+  width: 200px;
+  text-align: right;
+  list-style: none;
+  line-height: 1.6;
+}
+
+.menu a {
+  text-decoration: none;
+}

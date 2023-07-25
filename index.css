@@ -3,12 +3,19 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-snap-type: y mandatory;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   color: #251d20;
   font-size: 18px;
+  transition: background-color 300ms ease-out 200ms;
+  overflow-x: hidden;
 }
 a {
   color: #251d20;
@@ -69,4 +76,18 @@ br + a {
 
 .menu a {
   text-decoration: none;
+}
+
+/* Cover */
+/* @media (min-width: 992px) and (min-height: 650px) */
+
+.cover {
+  height: 100vh;
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+.cover-img {
+  width: 420px;
+  height: 532px;
 }

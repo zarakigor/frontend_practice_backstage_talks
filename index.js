@@ -1,16 +1,11 @@
 let bodyBackgroundColor = document.body.style.backgroundColor;
 let container = document.getElementsByClassName("container");
 let len = container[0].childElementCount;
+let height = window.innerHeight;
 
-function asd() {
-  console.log(Math.floor(window.scrollY) / window.innerHeight);
-  console.log(window.innerHeight);
-}
 window.addEventListener("scroll", () => {
-  let issueNumber = 7 - Math.floor(window.scrollY / window.innerHeight);
-  let qq = document.getElementById(`issue${issueNumber}`);
-  console.log(qq.dataset.color);
-  document.body.style.backgroundColor = qq.dataset.color;
+  // background color changes at the middle of section instead of beginning
+  let issueNumber = 7 - Math.ceil((window.scrollY - height / 2) / height);
+  let issue = document.getElementById(`issue${issueNumber}`);
+  document.body.style.backgroundColor = issue.dataset.color;
 });
-
-asd();

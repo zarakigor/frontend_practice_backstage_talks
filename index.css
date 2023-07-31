@@ -129,6 +129,9 @@ br + a {
   text-decoration: none;
   color: #fff;
 }
+.cover-link a:hover {
+  text-decoration: underline;
+}
 
 #issue6 a {
   color: #ff608c;

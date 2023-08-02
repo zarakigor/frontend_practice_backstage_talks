@@ -96,11 +96,11 @@ br + a {
   text-decoration: underline;
 }
 
+.privacy {
+  background-color: #fff;
+}
+
 /* Cover */
-/* @media (min-width: 992px) and (min-height: 650px) */
-/* 992 den küçüklerde scroll snapi kaldır */
-/* mobilde ve tablette kenradaki yazıları kaldır*/
-/* readme de unofficial olduğunu belirt*/
 
 .cover {
   height: 100vh;
@@ -135,4 +135,83 @@ br + a {
 
 #issue6 a {
   color: #ff608c;
+}
+
+/* TABLET */
+@media only screen and (max-width: 922px) {
+  html {
+    scroll-snap-type: none;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    position: absolute;
+  }
+
+  .logo img {
+    width: 160px;
+  }
+
+  .container {
+    margin-top: 6rem;
+  }
+
+  .menu {
+    visibility: hidden;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .description,
+  .contact {
+    position: relative;
+  }
+
+  .description {
+    width: 33%;
+    padding: 0 1rem;
+  }
+
+  .contact {
+    margin-bottom: 36px;
+  }
+}
+
+/* MOBILE*/
+@media only screen and (max-width: 480px) {
+  .cover-img {
+    padding: 0 2%;
+    width: 80%;
+    height: auto;
+  }
+
+  .footer {
+    margin-top: -80px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .description {
+    width: 95%;
+    margin: 0;
+    left: 0;
+  }
+
+  .contact {
+    right: 0;
+    text-align: center;
+    margin-bottom: 70px;
+  }
 }
